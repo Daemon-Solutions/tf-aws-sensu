@@ -39,6 +39,14 @@ variable "elasticache_instance_type" {
 	default = "cache.m3.medium"
 }
 
+variable "engine" {
+  default = "redis"
+}
+
+variable "engine_version" {
+  default = "3.2.4"
+}
+
 # variable "sensu_instance_profile" {}
 
 # == Variables with default values
