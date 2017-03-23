@@ -1,5 +1,4 @@
 module "sensu-elasticache" {
-  #source = "c:/users/sdatt/documents/bashton/tf-aws-elasticache"
   source = "../tf-aws-elasticache"
 
   name        = "${var.name}"
