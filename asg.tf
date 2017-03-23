@@ -1,4 +1,5 @@
 module "asg" {
+  #source = "c:/users/sdatt/documents/bashton/tf-aws-asg"
   source = "../tf-aws-asg"
 
   name                  = "${var.customer}-${var.envname}-sensu"

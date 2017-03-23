@@ -46,10 +46,10 @@ variable "engine" {
 variable "engine_version" {
   default = "3.2.4"
 }
-/*
-variable "parameter_group_name" {
+
+variable "parameter_group" {
   default = "default.redis3.2"
-}*/
+}
 # variable "sensu_instance_profile" {}
 
 # == Variables with default values

@@ -1,4 +1,5 @@
 module "sensu-elasticache" {
+  #source = "c:/users/sdatt/documents/bashton/tf-aws-elasticache"
   source = "../tf-aws-elasticache"
 
   name        = "${var.name}"
@@ -6,8 +7,7 @@ module "sensu-elasticache" {
   subnets     = "${var.private_subnets}"
   vpc_id      = "${var.vpc_id}"
   vpc_cidr    = "${var.vpc_cidr}"
-  node_type = "${var.elasticache_instance_type}"
-  #parameter_group_name = "${var.parameter_group_name}"
+  parameter_group = "${var.parameter_group}"
   engine_version = "${var.engine_version}"
   snapshot_window = "${var.snapshot_window}"
   snapshot_retention_limit = "${var.snapshot_retention_limit}"
