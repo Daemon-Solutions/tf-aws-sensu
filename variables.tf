@@ -50,10 +50,6 @@ variable "engine_version" {
 variable "parameter_group" {
   default = "default.redis3.2"
 }
-# variable "sensu_instance_profile" {}
-
-# == Variables with default values
-
 variable "aws_region" {
   default = "eu-west-1"
 }
@@ -78,5 +74,5 @@ variable "allowed_remote_cidrs" {
   default = []
 }
 
-variable "min" {  }
-variable "max" {  }
+variable "min" {}
+variable "max" {}
