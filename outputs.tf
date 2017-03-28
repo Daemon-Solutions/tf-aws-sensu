@@ -15,9 +15,9 @@ output "memcached_endpoint" {
 # Output endpoints for elasticache-repgroup
 
 output "endpoint" {
-  value = "${module.elasticache-rep-group.sensu.endpoint}"
+  value = "${module.sensu-elasticache.endpoint}"
 }
 
 output "configuration_endpoint" {
-  value = "${module.elasticache-rep-group.configuration_endpoint}"
+  value = "${module.sensu-elasticache.configuration_endpoint}"
 }
