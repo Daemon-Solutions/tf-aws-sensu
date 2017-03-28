@@ -81,13 +81,10 @@ variable "max" {}
 # Replication group variables */
 
 variable "replication_group_name" {
-  default = "testdefaultname"
 }
 
 variable "cluster_size" {
-  default = ""
 }
 
 variable "security_groups" {
-  default = ""
 }
