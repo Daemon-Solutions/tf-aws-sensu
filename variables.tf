@@ -85,6 +85,3 @@ variable "replication_group_name" {
 
 variable "cluster_size" {
 }
-
-variable "security_groups" {
-}

@@ -17,13 +17,13 @@ module "sensu-elasticache" {
   envtype  = "${var.envtype}"
   customer = "${var.customer}"
 
-  vpc_id   = "${module.vpc.vpc_id}"
-  vpc_cidr = "${module.vpc.vpc_cidr}"
+  vpc_id   = "${var.vpc_id}"
+  vpc_cidr = "${var.vpc_cidr}"
   key_name = "${var.key_name}"
 
   replication_group_name   = "${var.replication_group_name}"
   snapshot_window          = "01:00-08:00"
   snapshot_retention_limit = "7"
   cluster_size             = "3"
-  private_subnets          = ["${module.vpc.private_subnets}"]
+  private_subnets          = ["${var.private_subnets}"]
 }
