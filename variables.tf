@@ -80,8 +80,6 @@ variable "max" {}
 
 # Replication group variables */
 
-variable "replication_group_name" {
-}
+variable "replication_group_name" {}
 
-variable "cluster_size" {
-}
+variable "cluster_size" {}

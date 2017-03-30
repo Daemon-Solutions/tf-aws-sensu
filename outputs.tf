@@ -1,7 +1,7 @@
 # Output endpoints for elasticache
 
 output "elasticache_cluster_redis_endpoint" {
-  value = "${module.sensu-elasticache.elasticache_cluster_memcached_endpoint}"
+  value = "${module.sensu-elasticache.elasticache_cluster_redis_endpoint}"
 }
 
 output "elasticache_cluster_node_address" {

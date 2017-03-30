@@ -11,8 +11,9 @@ module "sensu-elasticache" {
   snapshot_window = "${var.snapshot_window}"
   snapshot_retention_limit = "${var.snapshot_retention_limit}"*/
 
-  source = "../tf-aws-elasticache-rep-group"
-
+  #source = "../tf-aws-elasticache-rep-group"
+  source = "c:/users/sdatt/documents/bashton/tf-aws-elasticache-rep-group"
+  
   envname  = "${var.envname}"
   envtype  = "${var.envtype}"
   customer = "${var.customer}"
