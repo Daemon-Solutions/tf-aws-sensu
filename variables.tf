@@ -78,8 +78,4 @@ variable "min" {}
 variable "max" {}
 
 
-# Replication group variables */
-
-variable "replication_group_name" {}
-
-variable "cluster_size" {}
+# Replication group variables (place here if utilising the tf-aws-elasticache-rep-group module)
