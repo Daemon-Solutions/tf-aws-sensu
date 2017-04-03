@@ -1,23 +1,13 @@
 # Output endpoints for elasticache
 
-output "elasticache_cluster_redis_endpoint" {
-  value = "${module.sensu-elasticache.elasticache_cluster_redis_endpoint}"
+output "node_list" {
+  value = "${module.sensu-elasticache.node_list}"
 }
 
-output "elasticache_cluster_node_address" {
-  value = "${module.sensu-elasticache.elasticache_cluster_node_address}"
+output "node_address" {
+  value = "${module.sensu-elasticache.node_address}"
 }
 
-output "elasticache_cluster_memcached_endpoint" {
-  value = "${module.sensu-elasticache.elasticache_cluster_memcached_endpoint}"
-}
-
-# Output endpoints for elasticache-repgroup
-
-output "elasticache_replication_group_endpoint" {
-  value = "${module.sensu-elasticache.elasticache_replication_group_endpoint}"
-}
-
-output "elasticache_replication_group_configuration_endpoint" {
-  value = "${module.sensu-elasticache.elasticache_replication_group_configuration_endpoint}"
+output "configuration_endpoint" {
+  value = "${module.sensu-elasticache.configuration_endpoint}"
 }

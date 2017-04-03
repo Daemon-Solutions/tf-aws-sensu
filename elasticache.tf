@@ -1,5 +1,6 @@
 module "sensu-elasticache" {
-  source = "../tf-aws-elasticache"
+  #source = "../tf-aws-elasticache"
+  source = "c:/users/sdatt/documents/bashton/tf-aws-elasticache"
 
   name                     = "${var.name}"
   cluster_id               = "${var.cluster_id}"
